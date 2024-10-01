@@ -1,0 +1,133 @@
+15385 execve("./master", ["./master", "12345"], 0x7ffdccce6070 /* 52 vars */) = 0
+15385 brk(NULL)                         = 0x56550d23c000
+15385 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd43748280) = -1 EINVAL (Argumento inválido)
+15385 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No existe el archivo o el directorio)
+15385 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+15385 fstat(3, {st_mode=S_IFREG|0644, st_size=121127, ...}) = 0
+15385 mmap(NULL, 121127, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fdc78952000
+15385 close(3)                          = 0
+15385 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
+15385 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220q\0\0\0\0\0\0"..., 832) = 832
+15385 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\f\4K\246\21\256\356\256\273\203t\346`\6\0374"..., 68, 824) = 68
+15385 fstat(3, {st_mode=S_IFREG|0755, st_size=157224, ...}) = 0
+15385 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc78950000
+15385 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\f\4K\246\21\256\356\256\273\203t\346`\6\0374"..., 68, 824) = 68
+15385 mmap(NULL, 140408, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc7892d000
+15385 mmap(0x7fdc78933000, 69632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fdc78933000
+15385 mmap(0x7fdc78944000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x17000) = 0x7fdc78944000
+15385 mmap(0x7fdc7894a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7fdc7894a000
+15385 mmap(0x7fdc7894c000, 13432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdc7894c000
+15385 close(3)                          = 0
+15385 openat(AT_FDCWD, "./libutil.so", O_RDONLY|O_CLOEXEC) = 3
+15385 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\21\0\0\0\0\0\0"..., 832) = 832
+15385 fstat(3, {st_mode=S_IFREG|0775, st_size=33808, ...}) = 0
+15385 getcwd("/home/daniel/Escritorio/DATSI23/SD/miniGFS.2024/master_node", 128) = 60
+15385 mmap(NULL, 20616, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc78927000
+15385 mmap(0x7fdc78928000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fdc78928000
+15385 mmap(0x7fdc7892a000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fdc7892a000
+15385 mmap(0x7fdc7892b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fdc7892b000
+15385 close(3)                          = 0
+15385 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+15385 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300A\2\0\0\0\0\0"..., 832) = 832
+15385 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+15385 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+15385 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\356\276]_K`\213\212S\354Dkc\230\33\272"..., 68, 880) = 68
+15385 fstat(3, {st_mode=S_IFREG|0755, st_size=2029592, ...}) = 0
+15385 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+15385 pread64(3, "\4\0\0\0\20\0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0", 32, 848) = 32
+15385 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\356\276]_K`\213\212S\354Dkc\230\33\272"..., 68, 880) = 68
+15385 mmap(NULL, 2037344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fdc78735000
+15385 mmap(0x7fdc78757000, 1540096, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x22000) = 0x7fdc78757000
+15385 mmap(0x7fdc788cf000, 319488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19a000) = 0x7fdc788cf000
+15385 mmap(0x7fdc7891d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fdc7891d000
+15385 mmap(0x7fdc78923000, 13920, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fdc78923000
+15385 close(3)                          = 0
+15385 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fdc78732000
+15385 arch_prctl(ARCH_SET_FS, 0x7fdc78732740) = 0
+15385 mprotect(0x7fdc7891d000, 16384, PROT_READ) = 0
+15385 mprotect(0x7fdc7894a000, 4096, PROT_READ) = 0
+15385 mprotect(0x7fdc7892b000, 4096, PROT_READ) = 0
+15385 mprotect(0x56550cb91000, 4096, PROT_READ) = 0
+15385 mprotect(0x7fdc7899d000, 4096, PROT_READ) = 0
+15385 munmap(0x7fdc78952000, 121127)    = 0
+15385 set_tid_address(0x7fdc78732a10)   = 15385
+15385 set_robust_list(0x7fdc78732a20, 24) = 0
+15385 rt_sigaction(SIGRTMIN, {sa_handler=0x7fdc78933bf0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fdc78941420}, NULL, 8) = 0
+15385 rt_sigaction(SIGRT_1, {sa_handler=0x7fdc78933c90, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fdc78941420}, NULL, 8) = 0
+15385 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+15385 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+15385 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+15385 brk(NULL)                         = 0x56550d23c000
+15385 brk(0x56550d25d000)               = 0x56550d25d000
+15385 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+15385 setsockopt(3, SOL_SOCKET, SO_REUSEADDR, [1], 4) = 0
+15385 bind(3, {sa_family=AF_INET, sin_port=htons(12345), sin_addr=inet_addr("0.0.0.0")}, 16) = 0
+15385 listen(3, 5)                      = 0
+15385 accept(3, {sa_family=AF_INET, sin_port=htons(36800), sin_addr=inet_addr("127.0.0.1")}, [16]) = 4
+15385 write(1, "master.c 2master.c 3mastre.c 4Co"..., 101) = 101
+15385 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7fdc77f31000
+15385 mprotect(0x7fdc77f32000, 8388608, PROT_READ|PROT_WRITE) = 0
+15385 clone(child_stack=0x7fdc78730fb0, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, parent_tid=[15782], tls=0x7fdc78731700, child_tidptr=0x7fdc787319d0) = 15782
+15782 set_robust_list(0x7fdc787319e0, 24 <unfinished ...>
+15385 accept(3,  <unfinished ...>
+15782 <... set_robust_list resumed>)    = 0
+15782 recvfrom(4, "C", 1, MSG_WAITALL, NULL, NULL) = 1
+15782 write(1, "master.c 5Operaci\303\263n recibida: C"..., 33) = 33
+15782 recvfrom(4, "\24\0'\200", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\4", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\3", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0x7fdc6ff31000
+15782 munmap(0x7fdc6ff31000, 847872)    = 0
+15782 munmap(0x7fdc74000000, 66260992)  = 0
+15782 mprotect(0x7fdc70000000, 135168, PROT_READ|PROT_WRITE) = 0
+15782 recvfrom(4, "F1\0", 3, MSG_WAITALL, NULL, NULL) = 3
+15782 write(4, "\0\0\0\0", 4)           = 4
+15782 recvfrom(4, "C", 1, MSG_WAITALL, NULL, NULL) = 1
+15782 write(1, "Operaci\303\263n recibida: C\n", 23) = 23
+15782 recvfrom(4, "\4\0\0\0", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\3", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\3", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "F1\0", 3, MSG_WAITALL, NULL, NULL) = 3
+15782 dup(2)                            = 6
+15782 fcntl(6, F_GETFL)                 = 0x402 (flags O_RDWR|O_APPEND)
+15782 fstat(6, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+15782 write(6, "Error al a\303\261adir el fichero al m"..., 45) = 45
+15782 close(6)                          = 0
+15782 write(4, "\377\377\377\377", 4)   = 4
+15782 recvfrom(4, "C", 1, MSG_WAITALL, NULL, NULL) = 1
+15782 write(1, "Operaci\303\263n recibida: C\n", 23) = 23
+15782 recvfrom(4, "\1\0\0\0", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\3", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\3", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "F2\0", 3, MSG_WAITALL, NULL, NULL) = 3
+15782 write(4, "\0\0\0\0", 4)           = 4
+15782 recvfrom(4, "C", 1, MSG_WAITALL, NULL, NULL) = 1
+15782 write(1, "Operaci\303\263n recibida: C\n", 23) = 23
+15782 recvfrom(4, "\4\0\0\0", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\2", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "\0\0\0\3", 4, MSG_WAITALL, NULL, NULL) = 4
+15782 recvfrom(4, "F3\0", 3, MSG_WAITALL, NULL, NULL) = 3
+15782 write(4, "\0\0\0\0", 4)           = 4
+15782 recvfrom(4, "N", 1, MSG_WAITALL, NULL, NULL) = 1
+15782 write(1, "Operaci\303\263n recibida: N\n", 23) = 23
+15782 write(1, "Procesando la operaci\303\263n 'N'\n", 29) = 29
+15782 write(4, "\0\0\0\3", 4)           = 4
+15782 dup(2)                            = 6
+15782 fcntl(6, F_GETFL)                 = 0x402 (flags O_RDWR|O_APPEND)
+15782 fstat(6, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+15782 write(6, "Enviado el n\303\272mero de ficheros: "..., 40) = 40
+15782 close(6)                          = 0
+15782 recvfrom(4, "", 1, MSG_WAITALL, NULL, NULL) = 0
+15782 dup(2)                            = 6
+15782 fcntl(6, F_GETFL)                 = 0x402 (flags O_RDWR|O_APPEND)
+15782 fstat(6, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+15782 write(6, "Error al recibir el c\303\263digo de o"..., 51) = 51
+15782 close(6)                          = 0
+15782 close(4)                          = 0
+15782 write(1, "Conexi\303\263n del cliente cerrada\n", 30) = 30
+15782 madvise(0x7fdc77f31000, 8368128, MADV_DONTNEED) = 0
+15782 exit(0)                           = ?
+15782 +++ exited with 0 +++
+15385 <... accept resumed>0x7ffd43748200, [16]) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+15385 --- SIGHUP {si_signo=SIGHUP, si_code=SI_USER, si_pid=14681, si_uid=1000} ---
+15385 +++ killed by SIGHUP +++
